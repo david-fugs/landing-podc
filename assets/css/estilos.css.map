@@ -1,7 +1,7 @@
 {
 "version": 3,
-"mappings": "",
-"sources": [],
+"mappings": "AAAA,CAAE,CACE,MAAM,CAAE,CAAC,CACT,OAAO,CAAE,CAAC,CACV,UAAU,CAAE,UAAU,CAE1B,EAAG,CACC,UAAU,CAAE,IAAI,CAEpB,CAAE,CACE,eAAe,CAAE,IAAI",
+"sources": ["../scss/_common.scss"],
 "names": [],
 "file": "estilos.css"
 }

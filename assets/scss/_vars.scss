@@ -1,0 +1,37 @@
+//Tipografias
+$poppins: 'Poppins', sans-serif;
+
+//Pesos de tipografias
+$light: 300;
+$regular: 400;
+$medium: 500;
+$semibold: 600;
+$bold: 700;
+$extrabold: 800;
+$heavy: 900;
+
+//Colores
+$azul1: #303E66;
+
+//Puntos de corte
+$breakpoints: (
+    xs: 0px,
+    s: 380px,
+    sm: 480px,
+    md: 768px,
+    lg: 992px,
+    xl: 1200px,
+    xxl: 1400px,
+);
+
+//Mixins
+@mixin is($media) {
+    $breakpoint: map-get($breakpoints, $media);
+    @media screen and (min-width: $breakpoint) { @content; }
+}
+@mixin titulos($color, $fontSize, $fontWeigth) {
+    color: $color;
+    font-size: $fontSize;
+    font-weight: $fontWeigth;
+    font-family: $raleway;
+}
