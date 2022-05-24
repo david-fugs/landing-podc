@@ -9,6 +9,11 @@ $(document).ready(function(){
     });
     $(".hamburguer").click(function() {
         $(".hamburguer span").toggleClass("active");
+        $(".inside-responsiveMenu ").slideToggle();
+    })
+    $(".modulos-resp").click(function() {
+        $(".sub-sub-Menu").slideToggle();
+        $(".modulos-resp").toggleClass("down");
     })
 });
 

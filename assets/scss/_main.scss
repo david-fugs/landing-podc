@@ -1,19 +1,43 @@
 .main-podc {
-    h1 {
+    h1,
+    .title {
         @include textos($blanco, 3rem, $bold);
+    }
+    .title {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        width: 100%;
+        span {
+            display: flex;
+            align-items: center;
+            &:before {
+                content: "\f00c";
+                font-size: 25px;
+                font-family: "FontAwesome";
+                margin-right: 10px;
+            }
+        }
     }
     width: 100%;
     height: calc(100vh - 70px);
     .presentation {
         background-color: $azul1;
-        padding: 4rem 0;
+        padding: 2.5rem 0;
         h3,
         h4 {
-            @include textos($blanco, 1.9rem, $bold);
+            @include textos($blanco, 1.6rem, $bold);
             padding-top: 1rem;
+            @include is (lg){
+                font-size: 1.9rem;
+            }
         }
         h4 {
-            font-size: 1.1rem;
+            font-size: 1.05rem;
+            @include is (lg){
+                font-size: 1.1rem;
+            }
         }
         .manage {
             min-height: 184px;
@@ -21,15 +45,18 @@
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            @include textos($blanco, .9rem, $regular);
+            @include textos($blanco, 1rem, $regular);
             border: 1px solid $blanco;
             border-radius: 8px;
             padding: 40px;
             margin-top: 2rem;
             cursor: pointer;
             i {
-                font-size: 2rem;
+                font-size: 2.5rem;
                 margin-bottom: 10px;
+                @include is (md){
+                    font-size: 2rem;
+                }
             }
             p {
                 text-align: center;
@@ -68,6 +95,12 @@
                     border-color: $rojo1;
                 }
             }
+            @include is (lg){
+                font-size: .9rem;
+            }
+        }
+        @include is (lg){
+            padding: 4rem 0;
         }
     }
 }

@@ -118,7 +118,7 @@ header {
                     height: 4px;
                     background-color: $azul1;
                     margin: 4px 0;
-                    @include animate(0.5s, ease);
+                    @include animate(0.3s, ease);
                     &.active {
                         &:nth-child(1) {
                             transform: translateY(11px) rotate(-45deg);
@@ -134,6 +134,70 @@ header {
                 &:hover {
                     &:before {
                         display: none;
+                    }
+                }
+            }
+            .inside-responsiveMenu {
+                width: 100%;
+                position: absolute;
+                top: 57px;
+                left: 0;
+                background-color: $blanco;
+                display: none;
+                >ul {
+                    position: relative;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    li {
+                        width: 100%;
+                        padding: 15px 0;
+                        position: relative;
+                        justify-content: center;
+                        a {
+                            display: flex;
+                            justify-content: center;
+                            &:hover {
+                                color: $azul1;
+                            }
+                        }
+                        .modulos-resp {
+                            &.up {
+                                &:after {
+                                    content: "+";
+                                    @include textos($azul1, 1rem, $bold);
+                                    margin: 0 -10px 0 10px;
+                                }
+                            }
+                            &.down {
+                                &:after {
+                                    content: "-";
+                                    @include textos($azul1, 1rem, $bold);
+                                    margin: 0 -10px 0 10px;
+                                }
+                            }
+                        }
+                        .sub-sub-Menu {
+                            display: none;
+                            position: absolute;
+                            z-index: 1;
+                            top: 37px;
+                            left: 0;
+                            width: 100%;
+                            background-color: $blanco;
+                            ul {
+                                flex-direction: column;
+                                position: relative;
+                                width: 100%;
+                                li {
+                                    width: 80%;
+                                    margin: auto;
+                                    position: relative;
+                                    border-bottom: 1px solid $gris1;
+                                }
+                            }
+                        }
                     }
                 }
             }
