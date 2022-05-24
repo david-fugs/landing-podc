@@ -10,38 +10,68 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-    <script src="assets/js/main.js"></script>
     <script src="https://kit.fontawesome.com/7a0f7896d3.js" crossorigin="anonymous"></script>
+    <script
+    src="https://code.jquery.com/jquery-3.6.0.js"
+    integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+    crossorigin="anonymous"></script>
+    <script src="assets/js/main.js"></script>
     <title>PODC</title>
 </head>
 <body>
     <header>
         <nav>
-            <ul>
-                <li>
-                    <a href="#" class="logo">
-                        PODC
-                    </a>
+            <!--Menu Desktop-->
+            <ul class="d-none d-lg-flex">
+                <li class="logo">
+                    <a href="#" class="d-none d-lg-flex">PODC</a>
                 </li>
                 <li>
-                    <a href="#" class="funciones">Funciones</a>
+                    <a href="#" class="opcion-menu funciones">Funciones</a>
+                </li>
+                <li class="d-flex justify-content-center align-items-center">
+                    <a href="#" class="opcion-menu modulos">Modulos</a>
+                    <i class="fa-solid fa-angle-down"></i>
+                    <div class="subMenu">
+                        <ul>
+                            <li>
+                                <a href="#">Modulo Coordinador</a>
+                                <a href="#">Modulo Colaborador</a>
+                                <a href="#">Modulo SG-SST</a>
+                            </li>
+                        </ul>
+                    </div>
                 </li>
                 <li>
-                    <a href="#" class="precios"></a>
-                </li>
-                <li>
-                    <a href="#" class="contacto">Contactenos
+                    <a href="#" class="opcion-menu contacto">Contactenos</a>
                 </li>
             </ul>
-            <div class="start">
+            <div class="start d-none d-lg-flex">
                 <ul>
-                    <li>
-                        <a href="#" class="login">Iniciar sesión</a>
+                    <li class="login">
+                        <a href="#" class="opcion-menu">
+                            <i class="fa-solid fa-user"></i>
+                            Iniciar sesión
+                        </a>
                     </li>
                 </ul>
-                <a href="" class="btn-start">Empecemos</a>
+                <a href="#" class="btn-start">Empecemos</a>
             </div>
+            <!--Inicio menu responsive-->
+            <ul class="d-lg-none">
+                <li class="logo">
+                    <a href="#" class="d-lg-none"></a>
+                </li>
+                <li class="hamburguer d-lg-none">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </li>
+            </ul>
         </nav>
     </header>
+    <div class="sombra"></div>
 </body>
+<script>
+</script>
 </html>
