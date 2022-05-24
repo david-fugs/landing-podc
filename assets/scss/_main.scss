@@ -1,0 +1,73 @@
+.main-podc {
+    h1 {
+        @include textos($blanco, 3rem, $bold);
+    }
+    width: 100%;
+    height: calc(100vh - 70px);
+    .presentation {
+        background-color: $azul1;
+        padding: 4rem 0;
+        h3,
+        h4 {
+            @include textos($blanco, 1.9rem, $bold);
+            padding-top: 1rem;
+        }
+        h4 {
+            font-size: 1.1rem;
+        }
+        .manage {
+            min-height: 184px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            @include textos($blanco, .9rem, $regular);
+            border: 1px solid $blanco;
+            border-radius: 8px;
+            padding: 40px;
+            margin-top: 2rem;
+            cursor: pointer;
+            i {
+                font-size: 2rem;
+                margin-bottom: 10px;
+            }
+            p {
+                text-align: center;
+                line-height: 20px;
+                margin-bottom: 0;
+            }
+            &--1{
+                i {
+                    color: $rosa1;
+                }
+                &:hover {
+                    border-color: $rosa1;
+                }
+            }
+            &--2{
+                i {
+                    color: $amarillo1;
+                }
+                &:hover {
+                    border-color: $amarillo1;
+                }
+            }
+            &--3{
+                i {
+                    color: $azul2;
+                }
+                &:hover {
+                    border-color: $azul2;
+                }
+            }
+            &--4{
+                i {
+                    color: $rojo1;
+                }
+                &:hover {
+                    border-color: $rojo1;
+                }
+            }
+        }
+    }
+}
