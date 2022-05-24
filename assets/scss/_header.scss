@@ -74,6 +74,7 @@ header {
                     }
                     ul {
                         width: 100%;
+                        flex-direction: column;
                         li {
                             width: 100%;
                             display: flex;
