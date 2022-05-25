@@ -105,17 +105,26 @@
     }
     .message {
         p {
-            @include textos($azul1, 2rem, $medium);
+            @include textos($azul1, 1.7rem, $medium);
+            text-align: center;
+            @include is (lg){
+                text-align: left;
+                font-size: 2rem;
+            }
         }
         .btn-meetUs {
             @include btn-start;
             width: 160px;
             padding: 10px 0;
+            margin: auto;
             &:after {
                 content: "\f061";
                 font-size: 1rem;
                 font-family: "FontAwesome";
                 margin-left: .5rem;
+            }
+            @include is (lg){
+                margin: inherit;
             }
         }
     }

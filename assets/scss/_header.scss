@@ -3,6 +3,9 @@ header {
     height: auto;
     border-bottom: 1px solid $gris1;
     padding: 10px 20px;
+    position: fixed;
+    top: 0;
+    background-color: $blanco;
     nav {
         display: flex;
         justify-content: space-between;
@@ -122,13 +125,13 @@ header {
                     @include animate(0.3s, ease);
                     &.active {
                         &:nth-child(1) {
-                            transform: translateY(11px) rotate(-45deg);
+                            transform: translateY(12px) rotate(-45deg);
                         }
                         &:nth-child(2){
                             transform: scale(0)
                         }
                         &:nth-child(3) {
-                            transform: translateY(-11px) rotate(45deg);
+                            transform: translateY(-12px) rotate(45deg);
                         }
                     }
                 }
@@ -203,7 +206,7 @@ header {
                 }
             }
             @include is (lg){
-                width: calc(70% - 20px);
+                width: calc(60% - 20px);
             }
         }
         .start {
