@@ -66,3 +66,59 @@ $breakpoints: (
         transform: scale(1.05);
     }
 }
+
+//Modificadores
+@each $breakpoint, $value in $breakpoints {
+    @include is($breakpoint) {
+        @for $i from 0 through 30 {
+        .fontsize-#{$breakpoint}-#{$i} {
+            font-size: #{$i}px!important
+        }
+
+        .padd-l-#{$breakpoint}-#{$i} {
+            padding-left: #{$i*10}px!important;
+        }
+        .padd-r-#{$breakpoint}-#{$i} {
+            padding-right: #{$i*10}px!important;
+        }
+        .padd-t-#{$breakpoint}-#{$i} {
+            padding-top: #{$i*10}px!important;
+        }
+        .padd-b-#{$breakpoint}-#{$i} {
+            padding-bottom: #{$i*10}px!important;
+        }
+
+        .marg-l-#{$breakpoint}-#{$i} {
+            margin-left: #{$i*10}px!important;
+        }
+        .marg-l-#{$breakpoint}-auto {
+            margin-left: auto!important;
+        }
+        .marg-r-#{$breakpoint}-#{$i} {
+            margin-right: #{$i*10}px!important;
+        }
+        .marg-r-#{$breakpoint}-auto {
+            margin-right: auto!important;
+        }
+        .marg-t-#{$breakpoint}-#{$i} {
+            margin-top: #{$i*10}px!important;
+        }
+        .marg-b-#{$breakpoint}-#{$i} {
+            margin-bottom: #{$i*10}px!important;
+        }
+
+        .marg-ln-#{$breakpoint}-#{$i} {
+            margin-left: -#{$i*10}px!important;
+        }
+        .marg-rn-#{$breakpoint}-#{$i} {
+            margin-right: -#{$i*10}px!important;
+        }
+        .marg-tn-#{$breakpoint}-#{$i} {
+            margin-top: -#{$i*10}px!important;
+        }
+        .marg-bn-#{$breakpoint}-#{$i} {
+            margin-bottom: -#{$i*10}px!important;
+        }
+        }
+    }
+    }
