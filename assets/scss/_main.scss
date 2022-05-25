@@ -128,4 +128,22 @@
             }
         }
     }
+    .manual-task {
+        h2 {
+            @include textos($azul1, 1.7rem, $bold);
+            text-align: center;
+            @include is (lg){
+                font-size: 2.5rem;
+                text-align: left;
+                padding-right: 100px;
+            }
+        }
+        p {
+            @include textos($azul1, 1rem, $regular);
+            margin-top: 25px;
+            @include is (lg){
+                font-size: 1.15rem;
+            }
+        }
+    }
 }
