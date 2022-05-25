@@ -103,4 +103,9 @@
             padding: 4rem 0;
         }
     }
+    .message {
+        p {
+            @include textos($azul1, 2rem, $medium);
+        }
+    }
 }
