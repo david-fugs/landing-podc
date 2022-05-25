@@ -107,5 +107,16 @@
         p {
             @include textos($azul1, 2rem, $medium);
         }
+        .btn-meetUs {
+            @include btn-start;
+            width: 160px;
+            padding: 10px 0;
+            &:after {
+                content: "\f061";
+                font-size: 1rem;
+                font-family: "FontAwesome";
+                margin-left: .5rem;
+            }
+        }
     }
 }
