@@ -1,0 +1,22 @@
+footer {
+    background-image: $blanco;
+    width: 100%;
+    .container {
+        border-top: 1px solid $gris1;
+        .row {
+            ul {
+                display: flex;
+                justify-content: space-between;
+                li {
+                    @include textos($azul1, 1rem, $semibold);
+                    a {
+                        color: $azul1;
+                    }
+                    @include is (lg){
+                        font-size: 1.3rem;
+                    }
+                }
+            }
+        }
+    }
+}

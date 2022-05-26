@@ -4,6 +4,7 @@ header {
     border-bottom: 1px solid $gris1;
     padding: 10px 20px;
     position: fixed;
+    z-index: 25;
     top: 0;
     background-color: $blanco;
     nav {

@@ -105,8 +105,11 @@
     }
     .message {
         p {
-            @include textos($azul1, 1.7rem, $medium);
+            @include textos($azul1, 1.7rem, $regular);
             text-align: center;
+            strong {
+                font-weight: $semibold;
+            }
             @include is (lg){
                 text-align: left;
                 font-size: 2rem;
@@ -128,7 +131,14 @@
             }
         }
     }
-    .manual-task {
+    .icon {
+        img {
+            filter: drop-shadow(0px 8px 16px rgba(0, 0, 0, 0.7));
+        }
+    }
+    .automatic-task,
+    .teems,
+    .sg-sst {
         h2 {
             @include textos($azul1, 1.7rem, $bold);
             text-align: center;
@@ -143,6 +153,83 @@
             margin-top: 25px;
             @include is (lg){
                 font-size: 1.15rem;
+            }
+        }
+    }
+    .teems {
+        h2 {
+            text-align: center;
+            @include is (lg){
+                text-align: right;
+                padding-left: 100px;
+                padding-right: 0;
+            }
+        }
+        p {
+            text-align: center;
+            @include is (lg){
+                text-align: right;
+            }
+        }
+    }
+    .icon-automatic,
+    .icon-teems,
+    .icon-sst {
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+    .do-better {
+        background-color: $azul1;
+        width: 100%;
+        height: auto;
+        padding: 40px 0;
+        position: relative;
+        z-index: 20;
+        &:after {
+            content: "";
+            background-image: url("../img/bg-apurate.png");
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            width: 100%;
+            height: 100px;
+            position: absolute;
+            z-index: -1;
+            bottom: -15px;
+        }
+        .content-do-better {
+            display: grid;
+            place-items: center;
+            @include textos($blanco, 1.2rem, $bold);
+            h2 {
+                @include is (lg){
+                    font-size: 2.8rem;
+                    font-weight: $bold;
+                }
+            }
+            h5 {
+                margin-bottom: 35px;
+                @include is (lg){
+                    font-size: 1.35rem;
+                    padding: 0 8rem;
+                }
+            }
+            a {
+                @include btn-start;
+                background-image: linear-gradient(to top, #a18cd1 0%, #fbc2eb 100%);
+                padding: 5px 20px;
+                &:hover {
+                    background-image: linear-gradient(to top, #a18cd1 0%, #fbc2eb 100%);
+                }
+                &:after {
+                    content: "\f061";
+                    font-size: 20px;
+                    font-family: "FontAwesome";
+                    margin-left: 5px;
+                }
             }
         }
     }
