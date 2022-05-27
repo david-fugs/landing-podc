@@ -3,6 +3,14 @@
     .title {
         @include textos($blanco, 3rem, $bold);
     }
+    .typing {
+        @include is (md){
+            width: 29ch;
+            animation: typing 3s steps(25), blink .5s step-end infinite alternate;
+            white-space: nowrap;
+            overflow: hidden;
+        }
+    }
     .title {
         display: flex;
         flex-direction: column;
@@ -140,10 +148,8 @@
     .teems,
     .sg-sst {
         h2 {
-            @include textos($azul1, 1.7rem, $bold);
             text-align: center;
             @include is (lg){
-                font-size: 2.5rem;
                 text-align: left;
                 padding-right: 100px;
             }
@@ -151,6 +157,7 @@
         p {
             @include textos($azul1, 1rem, $regular);
             margin-top: 25px;
+            text-align: center;
             @include is (lg){
                 font-size: 1.15rem;
             }
@@ -204,7 +211,8 @@
             display: grid;
             place-items: center;
             @include textos($blanco, 1.2rem, $bold);
-            h2 {
+            >h2 {
+                color: $blanco;
                 @include is (lg){
                     font-size: 2.8rem;
                     font-weight: $bold;
@@ -231,6 +239,33 @@
                     margin-left: 5px;
                 }
             }
+        }
+    }
+    .we-are {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        .devs {
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            clip-path: circle(50% at 50% 50%);
+            width: 200px;
+            height: 200px;
+            margin: 25px 0;
+            filter: grayscale(50%);
+            @include is (lg){
+                width: 200px;
+                height: 200px;
+                margin: 15px 25px 0;
+            }
+        }
+        .devs:first-child {
+            background-image: url("../img/devs/gio.png");
+        }
+        .devs:last-child {
+            background-image: url("../img/devs/david.jpeg");
         }
     }
 }
