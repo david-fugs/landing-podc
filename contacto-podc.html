@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="icon" href="assets/img/logo-oscuro.jpeg">
     <link rel="stylesheet" href="assets/css/estilos.css">
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
@@ -12,7 +13,7 @@
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     <script src="assets/js/main.js"></script>
     <script src="https://kit.fontawesome.com/7a0f7896d3.js" crossorigin="anonymous"></script>
-    <title>PODC</title>
+    <title>Contacto PODC</title>
 </head>
 <body>
     <header>
@@ -20,10 +21,10 @@
             <!--Menu Desktop-->
             <ul class="d-none d-lg-flex">
                 <li class="logo">
-                    <a href="#" class="d-none d-lg-flex">PODC</a>
+                    <a href="index.html" class="d-none d-lg-flex">PODC</a>
                 </li>
                 <li>
-                    <a href="#" class="opcion-menu funciones">Funciones</a>
+                    <a href="funciones.html" target="_blank" class="opcion-menu funciones">Instrucciones</a>
                 </li>
                 <li class="d-flex justify-content-center align-items-center">
                     <a href="#" class="opcion-menu modulos">Modulos</a>
@@ -43,7 +44,7 @@
                     </div>
                 </li>
                 <li>
-                    <a href="#" class="opcion-menu contacto">Contactenos</a>
+                    <a href="contacto-podc.html" target="_blank" class="opcion-menu contacto">Contactanos</a>
                 </li>
             </ul>
             <div class="start d-none d-lg-flex">
@@ -60,7 +61,7 @@
             <!--Inicio menu responsive-->
             <ul class="d-lg-none">
                 <li class="logo">
-                    <a href="#" class="d-lg-none"></a>
+                    <a href="padd-t-xs-13" class="d-lg-none"></a>
                 </li>
                 <li class="hamburguer d-lg-none">
                     <span></span>
@@ -70,7 +71,7 @@
                 <div class="inside-responsiveMenu">
                     <ul>
                         <li>
-                            <a href="#">Funciones</a>
+                            <a href="funciones.html" target="_blank">Instrucciones</a>
                         </li>
                         <li>
                             <a href="#" class="modulos-resp up">Modulos</a>
@@ -87,7 +88,7 @@
                             </div>
                         </li>
                         <li>
-                            <a href="#">Contactenos</a>
+                            <a href="contacto-podc.html" target="_blank">Contactanos</a>
                         </li>
                         <li>
                             <a href="#">Iniciar sesión</a>
@@ -100,116 +101,89 @@
             </ul>
         </nav>
     </header>
-
-        <div class="container">
+    <div class="main-contact">
+        <div class="container padd-t-xs-3 padd-t-lg-13 padd-b-xs-7">
             <div class="row">
-                <div class="col-6">
+                <div class="col-12 col-lg-6">
                     <div class="contactenos">
-                        <h1>Contactanos</h1>
+                        <h2 class="marg-b-xs-2 marg-t-xs-3 marg-t-lg-0">Contactanos</h2>
                         <div class="informacion">
-                           <strong>Contacto directo con los creadores <br> <br></strong> 
-                            Informacion y agendas <br> <br>
-                            Llamanos: <br>
-                            <i class="fa-brands fa-whatsapp-square"></i> David Lopez 3233606860 <br> 
-                            <i class="fa-brands fa-whatsapp-square"></i> Giovanny Quiroz 3059240054 <br> <br> 
-                            Direccion : <br>
-                            <i class="fa-solid fa-address-card"></i>Cra. 6 #24 - 56, Pereira, Risaralda
-
-
+                            <span>Contacto directo con los creadores</span> 
+                            <p>Informacion y agendas</p>
+                            <div class="data marg-t-xs-2">
+                                Llamanos:
+                                <a href="https://api.whatsapp.com/send?phone=+57 323606860&text=Hola, Nececito mas informacion acerca de PODC!">David Lopez - 3233606860</a>
+                                <a href="https://api.whatsapp.com/send?phone=+57 3059240054&text=Hola, Nececito mas informacion acerca de PODC!">Giovanny A Quiroz - 3059240054</a>
+                            </div>
+                            <div class="data marg-t-xs-2">
+                                Visitanos:
+                                <a href="#">
+                                    Cra. 6 #24 - 56, Pereira, Risaralda
+                                </a>
+                            </div>
+                            <div class="data marg-t-xs-2">
+                                Escribenos:
+                                <a href="mailto:podc.gestiona@gmail.com">podc.gestiona@gmail.com</a>
+                            </div>
                         </div>
 
                     </div>
                 </div>
-                <div class="col-6">
+                <div class="col-12 col-lg-6 order-first order-lg-0">
                     <div class="cooperacion">
                         <img src="assets/img/organizacion.jpg" class="img-fluid" alt="imagen">
                     </div>
-
                 </div>
-            </div>
-            <div>
-
             </div>
         </div>
-        <footer>
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-3">
-                        <div class="logo">
-                            PODC
-                            <h4>Planear, Organizar, Dirigir, Controlar.</h4>
-                        </div>
-                    </div>
-                    <div class="col-3">
-                        <div class="conocenos">
-                            <ul>
-                                
-                                <li>
-                                    Nosotros
-                                </li>
-                                <li>
-                                
-                                    Nuestras sedes
-                                </li>
-                                <li>
-                                    Planes asociados
-                                </li>
-                                <li>
-                                    Quienes somos
-                                </li>
-                                <li>
-                                    Legal
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col-3">
-                        <div class="servicios">
-                            <ul>
-                                <li>
-                                    Servicios
-                                </li>
-                                <li>
-                                    Empresas de 10 empleados
-                                </li>
-                                <li>
-                                    Empresas de 10 o mas empleados
-                                </li>
-                                <li>
-                                    SG-SST
-                                </li>
-                                <li>
-                                    Certificados
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col-3">
-                        <div class="contacto">
-                            <ul>
-                                <li>
-                                    Contacto
-                                </li>
-                                <li>
-                                    Calle 42# 7-11 Dosquebradas
-                                </li>
-                                <li>
-                                    +57 3233606860
-                                </li>
-                                <li>
-                                    60 6 3323981
-                                </li>
-                                <li>
-                                <i class="fa-brands fa-facebook-square"></i>
-                                <i class="fa-brands fa-whatsapp-square"></i>
-                                <i class="fa-brands fa-instagram-square"></i>
-                                <i class="fa-brands fa-twitter-square"></i>
-                                </li>
-                            </ul>
-                        </div>
+    </div>
+    <footer class="">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 d-lg-flex justify-content-center marg-t-xs-4 marg-b-xs-4">
+                    <ul>
+                        <li class="logo">
+                            <a href="index.html" class="">PODC</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-12 col-lg-10 offset-lg-1">
+                    <ul>
+                        <li>
+                            <a href="#">Acerca de nosotros</a>
+                        </li>
+                        <li>
+                            <a href="#">Instrucciones</a>
+                        </li>
+                        <li>
+                            <a href="#">Modulos</a>
+                        </li>
+                        <li>
+                            <a href="contacto-podc.html" target="_blank">Contacto</a>
+                        </li>
+                        <li>
+                            <a href="#">Legal</a>
+                        </li>
+                    </ul>
+                    <ul class="marg-t-xs-3">
+                        <li>
+                            <a href="#">Terminos y condiciones</a>
+                        </li>
+                        <li>
+                            <a href="#">Desarrolladores</a>
+                        </li>
+                        <li>
+                            <a href="#">Chat</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-12 d-flex justify-content-center marg-t-xs-3">
+                    <div class="copyR">
+                        <p>© 2022. Todos los derechos reservados <strong>PODC</strong></p>
                     </div>
                 </div>
             </div>
-        </footer>
+        </div>
+    </footer>
 </body>
 </html>

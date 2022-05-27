@@ -15,5 +15,11 @@ $(document).ready(function(){
         $(".sub-sub-Menu").slideToggle();
         $(".modulos-resp").toggleClass("down");
     })
+    setTimeout(function() {
+        $(".cookies").css("display", "flex").css("transition",".5s")
+    },1500)
+    $("#acept-cook").click(function() {
+        $(".cookies").fadeOut("slow");
+    })
 });
 

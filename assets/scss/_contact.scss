@@ -1,0 +1,65 @@
+.main-contact {
+    background-color: $azul1;
+    @include textos($blanco, 1.2rem, $bold);
+    .contactenos {
+        h2 {
+            color: $blanco;
+            font-weight: 700;
+        }
+        .informacion {
+            span {
+                font-size: 1.2rem;
+                font-weight: $regular;
+            }
+            p{
+                font-size: .9rem;
+                font-weight: $medium;
+            }
+            .data {
+                font-size: .9rem;
+                display: flex;
+                flex-direction: column;
+                a {
+                    @include textos($blanco, .8rem, $medium);
+                    margin: 8px 0;
+                    &:before {
+                        content: "\f232";
+                        font-family: "FontAwesome";
+                        font-size: 22px;
+                        color: $blanco;
+                        margin-right: 8px;
+                        @include is (lg){
+                            font-size: 22px;
+                        }
+                    }
+                    @include is (lg){
+                        font-size: .9rem;
+                    }
+                }
+            }
+            .data:nth-last-child(2){
+                a {
+                    &:before {
+                        content: "\f3c5";
+                        margin-right: 5px;
+                    }
+                }
+            }
+            .data:nth-last-child(1){
+                a {
+                    &:before {
+                        content: "\f0e0";
+                        margin-right: 5px;
+                    }
+                }
+            }
+        }
+    }
+    .cooperacion {
+        height: 100%;
+        img {
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+}

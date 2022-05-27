@@ -1,0 +1,18 @@
+.contenido {
+    @include textos($azul1, 1rem, $medium);
+    span {
+        font-weight: $extrabold;
+        font-size: 1.8rem;
+    }
+    .imagen {
+        .img-fluid {
+            max-width: 70%!important;
+            @include is (lg){
+                max-width: 100%;
+            }
+        }
+    }
+    @include is (lg){
+        font-size: 1.1rem;
+    }
+}
