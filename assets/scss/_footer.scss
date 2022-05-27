@@ -1,0 +1,52 @@
+footer {
+    background-image: $blanco;
+    width: 100%;
+    .container {
+        border-top: 1px solid $gris1;
+        .row {
+            ul {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                flex-wrap: wrap;
+                padding: 0 75px;
+                .logo {
+                    a {
+                        font-size: 3rem;
+                        &:before {
+                            width: 60px;
+                            height: 68px;
+                        }
+                    }
+                }
+                li {
+                    @include textos($azul1, 1rem, $semibold);
+                    padding-bottom: 10px;
+                    a {
+                        color: $azul1;
+                    }
+                    @include is (lg){
+                        font-size: 1.1rem;
+                        padding-bottom: 0;
+                    }
+                }
+                &:last-child {
+                    @include is (lg){
+                        padding: 0 190px;
+                    }
+                }
+                @include is (lg){
+                    justify-content: space-around;
+                    flex-direction: row;
+                }
+            }
+            .copyR {
+                @include textos($azul1, .8rem, $regular);
+                @include is (lg){
+                    font-size: 1rem;
+                }
+            }
+        }
+    }
+}
